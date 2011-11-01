@@ -1,0 +1,408 @@
+* { margin:0; padding:0; }
+body, div, span, p, a, img, ul, ol, li, table, th, tr, td, form, fieldset, legend, dl, dt, dd, blockquote, applet, object { border:0; }
+body { 
+  padding: 0; 
+  background: black url(img/header.gif) repeat-x; 
+  font: 0.8em/1.5 "arial",sans-serif; 
+  color: #fff; 
+  text-align: center; 
+  margin-top: -12px;
+}
+
+/* obecne odkazy --------------------------------------------------------------- */
+a {color:white;}
+a:link {color:white; text-transform: uppercase;}
+a:hover {color:#cae900;}
+a.active{color: white;}
+li a.active{color: white;}
+
+/* nadpisy --------------------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 { margin:15px 0 7px 0; }
+h1 { font-size:200%; }
+h2 { font-size:170%; font-weight: normal; margin: 15px 0px 0px 5px;}
+h3 { font-size:105%; border-bottom: 1px solid #ddd;}
+h4 { font-size:120%; }
+h5 { font-size:100%; }
+
+.rbroundbox h2 {color: #fff; font-size: 170%; margin-top: 0; border: 0;}
+
+/* layout ---------------------------------------------------------------------- */
+#layout { 
+  width:820px; 
+  margin:0 auto; 
+  text-align:left; 
+}
+
+  	/* hlavicka ------------------------------------------------------------------ */
+  	#header { position:relative; background: #000; }
+  
+      #logo {
+        font-family: 'Trebuchet MS', 'Geneva CE', lucida, sans-serif;
+        position: relative; 
+        overflow: hidden; 
+        width: 800px; height: 90px;
+        font-size:230%;
+        margin: 15px 0 0 11px;
+        line-height: 108px;
+        text-align: center;
+      
+      }
+      #logo a{
+        text-decoration: none;
+        color: #fff;
+        font-weight: normal;
+     
+        padding: 0px 10px 7px 10px; 
+      }
+      
+      #logo span {
+        color: #white;
+        font-weight: bold;
+      }
+      
+      #logo a:hover span {
+        color: #676767;
+        font-weight: bold;
+      }
+      
+      #navigation{
+        position: absolute;
+				left: 127px;
+				line-height: 63px;
+				display: block;
+				height: 95px;
+				width: 291px;
+				top: 0;
+				font-size: 95%;
+				margin: 0px 0px 0px 19px;
+				padding: 10px 0px 0px 4px;
+				border-left: 3px solid #1A1A1A;
+				border-right: 3px solid #1A1A1A;
+      }
+      
+      #navigation ul li{
+        display: inline;
+        margin-top:0px;
+      }
+      
+      #navigation li a {
+				color: white;
+				text-decoration: none;
+				float: left;
+				margin-right: 35px;
+				font-size: 15px;
+      }
+      
+      #navigation li a:hover {
+      	color: #cae900;
+      }
+      
+      #navigation a:hover {
+        color: #fff;
+      }
+      
+      /* The nice box with introducing text and news */
+      
+      /* set millions of background images */
+      .rbroundbox { background: #d02c2c url(img/main.jpg) no-repeat; }
+      .rbtop div { background: url(img/tl.gif) no-repeat top left; }
+      .rbtop { background: url(img/tr.gif) no-repeat top right; }
+      .rbbot div { background: url(img/bl.gif) no-repeat bottom left; }
+      .rbbot { background: url(img/br.gif) no-repeat bottom right; clear: both; }
+
+      /* height and width stuff, width not really nessisary. */
+      .rbtop div, .rbtop, .rbbot div, .rbbot {
+      width: 100%;
+      height: 7px;
+      font-size: 1px;
+      }
+      .rbcontent { margin: 0 7px; }
+      .rbroundbox { width: 95%; color: #fff;}
+      
+      .rbroundbox a { color: #676767; }
+      .rbroundbox a:hover { text-decoration: underline; }
+
+      .contents {
+      float: left; 
+      padding: 12px 0 12px 10px;
+      width:500px;
+      z-index: 10;
+      }
+      
+      #panel-right { float:right; width:230px; padding: 15px 10px 10px 10px; color: }
+      #panel-right-inside {border-left: 1px solid #ca4747; padding: 0 0 0 16px;}
+      #panel-right span { color: #cae900; }
+      #panel-right p {margin: 0;}
+      
+      #main {
+      padding: 0 37px
+      }
+      
+      #footer {
+      background: #303030;
+      color: #b1b1b1;
+      clear:both;
+      }
+      
+      #footer a{
+      color: #b1b1b1;
+      }
+      
+      #footer-inside {
+      width:746px; 
+      margin:0 auto; 
+      text-align:left; 
+      padding: 26px 0;
+      }
+      
+      #footer-inside p {
+      margin-top: 0;
+      margin-bottom: 0;
+      }
+      
+      #copyright {
+      float: left; 
+      width: 300px;
+      }
+      
+      #dont-delete-this{
+      margin: 0 0 0 323px;
+      text-align: right;
+      }
+
+/* odstavce -------------------------------------------------------------------- */
+p { margin:15px 0; line-height: 24px; font-size: 95%}
+
+.contents p {color: #fff; margin-top: 10px;}
+
+/* tabulky --------------------------------------------------------------------- */
+table { margin:15px 0; border: 1px solid black; font-size:100%; width: 100%;}
+th { text-align:center; font-weight:bold; border: 1px solid #cdcdcd;}
+th, td { padding: 0px 6px 0px 6px; border: 5px solid black;}
+tr.table-top {background: #1a1a1a; font-weight: bold;}
+
+/* seznamy --------------------------------------------------------------------- */
+ul, ol { display:block; margin:15px 0 15px 40px; }
+ul ul, ul ul ul, ol ol, ol ol ol { margin:0; margin-left:20px; }
+ol { list-style-type:decimal; }
+ol ol { list-style-type:upper-alpha; }
+ol ol ol {list-style-type:lower-alpha; }
+li { display:list-item; }
+ul li a { text-decoration:underline; }
+
+/* definice -------------------------------------------------------------------- */
+dl { margin:15px 0; }
+dt { font-weight:bold; }
+dd { margin-left:30px; }
+
+/* ostatni --------------------------------------------------------------------- */
+fieldset { 
+	margin: 6px;
+  padding: 17px;
+  width: 492px;
+	border:1px solid #989898; 
+}
+legend { margin-left:10px; font-size:100%; font-weight:bold; color:white; }
+abbr, acronym, .help { border-bottom:1px dotted #CCC; cursor:help; }
+blockquote { margin:15px 20px; font-style:italic; }
+del, .del { text-decoration:line-through; }
+strong, .strong { font-weight:bold; }
+cite, em, q, var { font-style:italic; }
+code, kbd, samp  {font-family:monospace; font-size:110%; }
+hr { display:block; height:1px; margin:10px 0; padding:0; border:0 solid #CCC; background:#CCC; color:#CCC;} 
+.light {padding: 4px 5px; background: #ac0001; text-decoration: none;} .light:hover {color: #fff;}
+.noscreen { display:none; }
+/*add by laxman*/
+#logo h1
+ {
+	 font-size: 130%;
+	 height: 89px;
+	 margin: -11px 0px 0px 15px;
+ }
+ #logo h1 a
+  {
+	
+	  height:78px;
+  }
+#logo h1 img
+ {
+float:left;
+height:60px;
+padding-top:10px;
+width:66px;
+	
+ }
+ .mainpage 
+ {
+	 float:left;
+	 width:540px;
+ }
+ .rightblock
+  {
+		float:left;
+		padding-left:15px;
+		width:181px;
+		margin-top: 68px;
+    
+  }
+  
+  .item-list ul li {
+    font-size: 8pt;
+    list-style: none outside none;
+    margin-left: -15px;
+    padding: 5px 0 8px 0;
+}
+
+.rightblock h2 {
+    display: none;
+}
+
+li.leaf {
+    list-style: none outside none;
+    margin: 0;
+    padding: 3px 0 0 15px;
+    height: 45px;
+}
+
+
+.breadcrumb {
+	color: #676767;
+}
+
+.dir-listing-status {
+	display: none;
+}
+
+tr.even, tr.odd{
+ background-color: #1a1a1a;
+}
+
+thead {
+	background-color: #454545;
+}
+
+.borderright{
+	border-right: none;
+	padding-left: 14px;
+}
+
+.borderright img{
+	margin-top:5px;
+	margin-left: 5px;
+}
+
+.borderleft{
+	border-left: none;
+	width: 300px;
+}
+
+.attachments {
+	color: #8b8b8b;
+}
+
+.negmarg{
+	margin-left: -25px;
+}
+
+.changecolor {
+	color: #8b8b8b;
+	text-align: center;
+}
+
+th a{
+	text-decoration: none;
+}
+
+th{
+	padding: 10px 0px 11px 0px;
+}
+
+.changemargin{
+	margin-left: -27px;
+}
+
+.centerme{
+	text-align:center;
+}
+
+thead th {
+	padding-right: 0px;
+}
+
+
+li.first a{
+	background: url(img/myacc.jpg) no-repeat;
+	display: block;
+	width: 145px;
+	height: 40px;
+	padding: 12px 0px 0px 42px;
+}
+
+.not-logged-in li.last a{
+	background:none;
+	padding: 5px 0px 0px 32px;
+}
+
+li.last a{
+	background: url(img/logout.jpg) no-repeat;
+	display: block;
+	width: 145px;
+	height: 40px;
+	padding: 12px 0px 0px 42px;
+}
+
+.block ul{
+	padding: 0;
+}
+
+ul.menu li {
+	margin: 0;
+}
+
+
+.menu li{
+	margin:0;
+	padding: 0;
+}
+
+#logo img{
+	float:left;
+	margin: 20px 0px 0px 21px;
+}
+
+.front .rightblock{
+	margin-top: 10px;
+}
+
+.marker, .form-required{
+	color: #cae900;
+}
+
+.form-file{
+	color:white;
+}
+
+ul.primary li.active a{
+	background-color:black;
+}
+
+.not-logged-in #navigation {
+	display: none;
+}
+
+#cab{
+	text-align: center;
+	line-height: 16px;
+	margin-top: 15px;
+}
+
+#wiki{
+	border-left: solid 3px #1a1a1a;
+	height: 84px;
+	padding: 22px 0px 0px 46px;
+	margin: -26px 0px 0px 15px;
+}
+
+.content p{
+	margin-left: 8px;
+}

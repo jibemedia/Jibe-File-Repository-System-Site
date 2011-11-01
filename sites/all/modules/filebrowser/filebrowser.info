@@ -1,0 +1,16 @@
+name = Filebrowser
+description = Provides FTP-like browsing capabilities.
+core = 6.x
+package = FileBrowser
+version = "6.x-2.0-rc13"
+core = "6.x"
+project = "filebrowser"
+
+
+
+; Information added by drupal.org packaging script on 2011-06-14
+version = "6.x-2.0-rc13"
+core = "6.x"
+project = "filebrowser"
+datestamp = "1308091615"
+
